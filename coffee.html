@@ -102,12 +102,12 @@ function pointBuffer (pt, radius, units, resolution) {
   return turf.polygon([ring])
 }
 
-$.get('test.geojson', function(data){
+$.get('phcoffee.geojson', function(data){
     $('.blocker').remove();
     $('#topbar').show();
 
     var fc = (data);
-    //var fc = JSON.parse(data);
+    var fc = JSON.parse(data);
 
     //find me functionality
     $('#findme').on('click', function(){
